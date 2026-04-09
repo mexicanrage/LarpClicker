@@ -35,9 +35,18 @@ class DeviceHandler:
 
         for device in devices:
             if explicit_search:
-                coincidence = re.search('Name="(.*?)"', device)
+                search_by_name = search_device[0] == '"'
 
-                if coincidence and coincidence.group() == f"Name={search_device}":
+                if search_by_name:
+                    coincidence = re.search('Name="(.*?)"', device)
+
+                    if coincidence and coincidence.group() == f"Name={search_device}":
+                        found_device = device
+                        break
+
+                    continue
+
+                if search_device.lower() in device.lower():
                     found_device = device
                     break
 
@@ -119,6 +128,8 @@ class MouseTracker:
 
 class KeyboardTracker:
     def __init__(self, dev: str, mouse: MouseTracker) -> None:
+        print(dev)
+
         self.Device = InputDevice(dev)
         self.MouseDevice = mouse
 
