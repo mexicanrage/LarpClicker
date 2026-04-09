@@ -15,7 +15,7 @@ CLICK_DELAY_MS=1 <- You can also change the click delay in ms inside this file
 KEYBOARD_DEVICE="Hangsheng R75 QMK"
 MOUSE_DEVICE=Unknown
 ```
-*Note that the name of the devices is written in quotes, but if it is unknown it simply says "Unknown"*
+*Note that the name of the devices is written in quotes, but if it is unknown it simply says "Unknown", or you can write the name of the event the keyboard is connected to without quotes, for example event3*
 
 (If you don't know the name of your devices, you can use the command ```cat /proc/bus/input/devices```)
 
