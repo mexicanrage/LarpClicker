@@ -128,8 +128,6 @@ class MouseTracker:
 
 class KeyboardTracker:
     def __init__(self, dev: str, mouse: MouseTracker) -> None:
-        print(dev)
-
         self.Device = InputDevice(dev)
         self.MouseDevice = mouse
 
