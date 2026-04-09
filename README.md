@@ -17,4 +17,6 @@ MOUSE_DEVICE=Unknown
 ```
 *Note that the name of the devices is written in quotes, but if it is unknown it simply says "Unknown"*
 
+(If you don't know the name of your devices, you can use the command ```cat /proc/bus/input/devices```)
+
 To activate the autoclicker you only need to use the ```larpclicker``` command that will be created by default in /usr/bin
