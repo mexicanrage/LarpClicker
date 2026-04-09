@@ -4,6 +4,11 @@ place=$(pwd)
 
 echo "Installing"
 
+python3 -m venv venv
+
+source venv/bin/activate
+pip install -r requirements.txt
+
 sudo cat <<EOF >/usr/bin/larpclicker
   #!/bin/bash
 
