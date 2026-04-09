@@ -3,7 +3,7 @@ A simple more or less functional autoclicker for wayland
 
 # Installation
 ```sh
-git clone https://github.com/mexicanrage/LarpClicker.git | cd LarpClicker | sudo ./installer.sh
+git clone https://github.com/mexicanrage/LarpClicker.git && cd LarpClicker && sudo ./installer.sh
 ```
 
 # Guide
